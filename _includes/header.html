@@ -11,7 +11,7 @@
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li>
-        <a href="/about">
+        <a href="{{ "/about" | prepend: site.url }}">
           About
         </a>
         </li>
@@ -22,29 +22,29 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="biographies">
           <li>
-          <a href="/cohen">
+          <a href="{{ "/cohen" | prepend: site.url }}">
             Lewis Cohen
           </a>
           </li>
           <li>
-          <a href="/nicoleau">
+          <a href="{{ "/nicoleau" | prepend: site.url }}">
             Michael Nicoleau
           </a>
           </li>
         </ul>
         </li>
         <li>
-        <a href="/practice">
+        <a href="{{ "/practice" | prepend: site.url }}">
           Practice Areas
         </a>
         </li>
         <li>
-        <a href="/articles">
+        <a href="{{ "/articles" | prepend: site.url }}">
           Articles
         </a>
         </li>
         <li>
-        <a href="/publications">
+        <a href="{{ "/publications" | prepend: site.url }}">
           Publications & Awards
         </a>
         </li>
