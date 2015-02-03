@@ -1,7 +1,7 @@
 <div class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
-      {% assign title = site.title | split: "-"%}
+      {% assign title = site.title | upcase | split: "-"%}
       <a href="{{ "/" | prepend: site.url }}" class="navbar-brand"><span id="cohenTitle">{{title[0]}}</span>&nbsp;<span id="nicoleauTitle">{{title[1]}}</span>&nbsp;<span id="pllcTitle">PLLC</span></a>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
         <span class="icon-bar"></span>
