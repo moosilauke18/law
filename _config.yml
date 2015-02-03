@@ -5,6 +5,7 @@ description: ""
 baseurl: ""
 #url: "http://cohen-nicoleau.com"
 url: "http://www.thezymologist.com/law"
+#url: "http://localhost:4000"
 
 # Build settings
 markdown: redcarpet
