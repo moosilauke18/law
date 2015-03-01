@@ -1,0 +1,55 @@
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      {% assign title = site.title | upcase | split: "-"%}
+      <a href="{{ "/" | prepend: site.url }}" class="navbar-brand"><span id="cohenTitle">{{title[0]}}</span>&nbsp;<span id="nicoleauTitle">{{title[1]}}</span>&nbsp;<span id="pllcTitle">PLLC</span></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li>
+        <a href="{{ "/about" | prepend: site.url }}">
+          About
+        </a>
+        </li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="biographies">
+          Biographies
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="biographies">
+          <li>
+          <a href="{{ "/cohen" | prepend: site.url }}">
+            Lewis Cohen
+          </a>
+          </li>
+          <li>
+          <a href="{{ "/nicoleau" | prepend: site.url }}">
+            Michael Nicoleau
+          </a>
+          </li>
+        </ul>
+        </li>
+        <li>
+        <a href="{{ "/practice" | prepend: site.url }}">
+          Practice Areas
+        </a>
+        </li>
+        <li>
+        <a href="{{ "/articles" | prepend: site.url }}">
+          Articles
+        </a>
+        </li>
+        <li>
+        <a href="{{ "/publications" | prepend: site.url }}">
+          Publications & Awards
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
