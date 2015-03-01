@@ -1,5 +1,6 @@
 ---
 layout: biography
+fullname: Michael D. Nicoleau
 author: nicoleau
 ---
 #### Summary

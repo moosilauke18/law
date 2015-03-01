@@ -1,0 +1,11 @@
+# Site settings
+title: Cohen-Nicoleau 
+email: lewis.cohen@cohen-nicoleau.com
+description: ""
+baseurl: ""
+#url: "http://cohen-nicoleau.com"
+url: "http://localhost:4000"
+
+# Build settings
+markdown: redcarpet
+permalink: pretty

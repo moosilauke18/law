@@ -1,5 +1,6 @@
 ---
 layout: biography
+fullname: Lewis R. Cohen
 author: cohen
 ---
 #### Summary
