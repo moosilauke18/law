@@ -45,3 +45,11 @@ body {
 #nicoleauTitle {
     color: #948A54;
 }
+.center-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  margin-right: -4px;
+}
+
+
