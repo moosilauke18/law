@@ -1,8 +1,8 @@
 <div class="navbar navbar-default">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
-      {% assign title = site.title | upcase | split: "-"%}
-      <a href="{{ "/" | prepend: site.url }}" class="navbar-brand"><span id="cohenTitle">{{title[0]}}</span>&nbsp;<span id="nicoleauTitle">{{title[1]}}</span>&nbsp;<span id="pllcTitle">PLLC</span></a>
+      <a href="{{ "/" | prepend: site.url }}" class="navbar-brand">
+        <img id="brandImage"  src="{{ "/assets/images" | prepend: site.url}}/logo.png" alt="Brand" class="img-responsive"></a>
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -10,15 +10,15 @@
       </button>
     </div>
     <div class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li>
         <a href="{{ "/about" | prepend: site.url }}">
-          About
+          About Our Firm
         </a>
         </li>
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="biographies">
-          Biographies
+          Our Attorneys
           <span class="caret"></span>
         </a>
         <ul class="dropdown-menu" aria-labelledby="biographies">
@@ -32,6 +32,11 @@
             Michael Nicoleau
           </a>
           </li>
+          <li>
+          <a href="{{ "/gottlieb" | prepend: site.url }}">
+            Fredric Gottlieb
+          </a>
+          </li>
         </ul>
         </li>
         <li>
@@ -41,12 +46,12 @@
         </li>
         <li>
         <a href="{{ "/articles" | prepend: site.url }}">
-          Articles
+          Articles & Publications
         </a>
         </li>
         <li>
-        <a href="{{ "/publications" | prepend: site.url }}">
-          Publications & Awards
+        <a href="{{ "/contact" | prepend: site.url }}">
+          Contact Us
         </a>
         </li>
       </ul>

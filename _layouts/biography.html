@@ -4,17 +4,12 @@
   {% include head.html %}
 
   <body>
-    {% comment %}
 
     {% include header.html %}
-    {% endcomment %}
 
     <div class="container" id="main">
       <div class="row">
-        <div class="col-md-4 center-vertical">
-          <a href="{{ "/" | prepend: site.url}}"><img src="{{ "/assets/images" | prepend: site.url}}/logo.jpg" class="center-block img-responsive"></a>
-        </div>
-        <div class="col-md-8 center-vertical">
+        <div class="col-md-8 col-md-offset-4">
           <h2 class="text-center">{{ page.fullname }}</h2>
           <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -29,7 +24,12 @@
       </div>
       <div class="row">
         <div class="col-md-2">
+          {% unless page.author == "gottlieb" %}
           <img width="100%" src="{{ "/assets/images/" | append: page.author | append: ".png" | prepend: site.url}}" class="img-thumbnail img-responsive">
+        {% else %}
+          <img width="100%" src="{{ "/assets/images/placeholder.png" | prepend: site.url}}" class="img-thumbnail img-responsive">
+            
+          {% endunless %}
         </div>
         <div class="col-md-10">
           {{ content }}
